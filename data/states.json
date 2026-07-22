@@ -1,0 +1,226 @@
+[
+    {
+        "id": 1,
+        "name": "Andhra Pradesh",
+        "capital": "Amaravati",
+        "image": "../assets/images/states/andhra-pradesh.jpg",
+        "bannerImage": "../assets/images/states/andhra-pradesh1.jpg",
+        "description": "Coastal temples, ancient stupas and the vibrant city of Visakhapatnam await curious travelers."
+    },
+    {
+        "id": 2,
+        "name": "Arunachal Pradesh",
+        "capital": "Itanagar",
+        "image": "../assets/images/states/arunachal-pradesh.jpg",
+        "bannerImage": "../assets/images/states/arunachal-pradesh1.jpg",
+        "description": "Untouched Himalayan valleys, monasteries and tribal culture make this the land of dawn-lit mountains."
+    },
+    {
+        "id": 3,
+        "name": "Assam",
+        "capital": "Dispur",
+        "image": "../assets/images/states/assam.jpg",
+        "bannerImage": "../assets/images/states/assam1.jpg",
+        "description": "Sprawling tea gardens, the mighty Brahmaputra and one-horned rhinos define this northeastern gem."
+    },
+    {
+        "id": 4,
+        "name": "Bihar",
+        "capital": "Patna",
+        "image": "../assets/images/states/bihar.jpg",
+        "bannerImage": "../assets/images/states/bihar1.jpg",
+        "description": "Birthplace of Buddhism, home to Bodh Gaya, Nalanda and centuries of spiritual heritage."
+    },
+    {
+        "id": 5,
+        "name": "Chhattisgarh",
+        "capital": "Raipur",
+        "image": "../assets/images/states/chhattisgarh.jpg",
+        "bannerImage": "../assets/images/states/chhattisgarh1.jpg",
+        "description": "Dense forests, thundering waterfalls and tribal traditions shape this central Indian state."
+    },
+    {
+        "id": 6,
+        "name": "Goa",
+        "capital": "Panaji",
+        "image": "../assets/images/states/goa.jpg",
+        "bannerImage": "../assets/images/states/goa1.jpg",
+        "description": "Golden beaches, vibrant nightlife and Portuguese heritage blend into India's favorite coastal getaway."
+    },
+    {
+        "id": 7,
+        "name": "Gujarat",
+        "capital": "Gandhinagar",
+        "image": "../assets/images/states/gujarat.jpg",
+        "bannerImage": "../assets/images/states/gujarat1.jpg",
+        "description": "The Rann of Kutch, Gir's lions and vibrant festivals showcase Gujarat's rich culture."
+    },
+    {
+        "id": 8,
+        "name": "Haryana",
+        "capital": "Chandigarh",
+        "image": "../assets/images/states/haryana.jpg",
+        "bannerImage": "../assets/images/states/haryana1.jpg",
+        "description": "Ancient battlefields, Mughal gardens and modern cities sit side by side in Haryana."
+    },
+    {
+        "id": 9,
+        "name": "Himachal Pradesh",
+        "capital": "Shimla",
+        "image": "../assets/images/states/himachal-pradesh.jpg",
+        "bannerImage": "../assets/images/states/himachal-pradesh1.jpg",
+        "description": "Snow-capped peaks, charming hill stations and calm mountain trails invite every adventurer."
+    },
+    {
+        "id": 10,
+        "name": "Jharkhand",
+        "capital": "Ranchi",
+        "image": "../assets/images/states/jharkhand.jpg",
+        "bannerImage": "../assets/images/states/jharkhand1.jpg",
+        "description": "Rolling hills, cascading waterfalls and rich mineral lands define this forested plateau state."
+    },
+    {
+        "id": 11,
+        "name": "Karnataka",
+        "capital": "Bengaluru",
+        "image": "../assets/images/states/karnataka.jpg",
+        "bannerImage": "../assets/images/states/karnataka1.jpg",
+        "description": "Royal palaces, tech hubs and Western Ghats forests come together in diverse Karnataka."
+    },
+    {
+        "id": 12,
+        "name": "Kerala",
+        "capital": "Thiruvananthapuram",
+        "image": "../assets/images/states/kerala.jpg",
+        "bannerImage": "../assets/images/states/kerala1.jpg",
+        "description": "Serene backwaters, lush greenery and spice-scented hills earn Kerala the title God's Own Country."
+    },
+    {
+        "id": 13,
+        "name": "Madhya Pradesh",
+        "capital": "Bhopal",
+        "image": "../assets/images/states/madhya-pradesh.jpg",
+        "bannerImage": "../assets/images/states/madhya-pradesh1.jpg",
+        "description": "Tiger reserves, ancient temples and rock-cut caves sit at the heart of India."
+    },
+    {
+        "id": 14,
+        "name": "Maharashtra",
+        "capital": "Mumbai",
+        "image": "../assets/images/states/maharashtra.jpg",
+        "bannerImage": "../assets/images/states/maharashtra1.jpg",
+        "description": "Home of Mumbai, beaches, forts and hill stations that mix urban energy with nature."
+    },
+    {
+        "id": 15,
+        "name": "Manipur",
+        "capital": "Imphal",
+        "image": "../assets/images/states/manipur.jpg",
+        "bannerImage": "../assets/images/states/manipur1.jpg",
+        "description": "Floating islands on Loktak Lake and graceful classical dance traditions define scenic Manipur."
+    },
+    {
+        "id": 16,
+        "name": "Meghalaya",
+        "capital": "Shillong",
+        "image": "../assets/images/states/meghalaya.jpg",
+        "bannerImage": "../assets/images/states/meghalaya1.jpg",
+        "description": "Living root bridges, misty hills and the wettest place on earth await in Meghalaya."
+    },
+    {
+        "id": 17,
+        "name": "Mizoram",
+        "capital": "Aizawl",
+        "image": "../assets/images/states/mizoram.jpg",
+        "bannerImage": "../assets/images/states/mizoram1.jpg",
+        "description": "Rolling green hills, bamboo forests and warm hospitality mark this peaceful northeastern state."
+    },
+    {
+        "id": 18,
+        "name": "Nagaland",
+        "capital": "Kohima",
+        "image": "../assets/images/states/nagaland.jpg",
+        "bannerImage": "../assets/images/states/nagaland1.jpg",
+        "description": "Colorful tribal festivals, terraced hills and the famous Hornbill Festival showcase Naga heritage."
+    },
+    {
+        "id": 19,
+        "name": "Odisha",
+        "capital": "Bhubaneswar",
+        "image": "../assets/images/states/odisha.jpg",
+        "bannerImage": "../assets/images/states/odisha1.jpg",
+        "description": "Majestic temples, golden beaches and the ancient Sun Temple make Odisha truly memorable."
+    },
+    {
+        "id": 20,
+        "name": "Punjab",
+        "capital": "Chandigarh",
+        "image": "../assets/images/states/punjab.jpg",
+        "bannerImage": "../assets/images/states/punjab1.jpg",
+        "description": "The golden fields, vibrant culture and the sacred Golden Temple define spirited Punjab."
+    },
+    {
+        "id": 21,
+        "name": "Rajasthan",
+        "capital": "Jaipur",
+        "image": "../assets/images/states/rajasthan.jpg",
+        "bannerImage": "../assets/images/states/rajasthan1.jpg",
+        "description": "Majestic forts, royal palaces and golden deserts capture the grandeur of Rajasthan."
+    },
+    {
+        "id": 22,
+        "name": "Sikkim",
+        "capital": "Gangtok",
+        "image": "../assets/images/states/sikkim.jpg",
+        "bannerImage": "../assets/images/states/sikkim1.jpg",
+        "description": "Himalayan peaks, Buddhist monasteries and alpine lakes make Sikkim a tranquil mountain escape."
+    },
+    {
+        "id": 23,
+        "name": "Tamil Nadu",
+        "capital": "Chennai",
+        "image": "../assets/images/states/tamil-nadu.jpg",
+        "bannerImage": "../assets/images/states/tamil-nadu1.jpg",
+        "description": "Grand temples, classical arts and a long coastline showcase Tamil Nadu's timeless heritage."
+    },
+    {
+        "id": 24,
+        "name": "Telangana",
+        "capital": "Hyderabad",
+        "image": "../assets/images/states/telangana.jpg",
+        "bannerImage": "../assets/images/states/telangana1.jpg",
+        "description": "Historic Hyderabad, ancient forts and modern tech parks blend seamlessly across Telangana."
+    },
+    {
+        "id": 25,
+        "name": "Tripura",
+        "capital": "Agartala",
+        "image": "../assets/images/states/tripura.jpg",
+        "bannerImage": "../assets/images/states/tripura1.jpg",
+        "description": "Royal palaces, lakeside temples and lush hills reveal the quiet charm of Tripura."
+    },
+    {
+        "id": 26,
+        "name": "Uttar Pradesh",
+        "capital": "Lucknow",
+        "image": "../assets/images/states/uttar-pradesh.jpg",
+        "bannerImage": "../assets/images/states/uttar-pradesh1.jpg",
+        "description": "Home to the Taj Mahal, sacred Varanasi and centuries of Mughal architectural splendor."
+    },
+    {
+        "id": 27,
+        "name": "Uttarakhand",
+        "capital": "Dehradun",
+        "image": "../assets/images/states/uttarakhand.jpg",
+        "bannerImage": "../assets/images/states/uttarakhand1.jpg",
+        "description": "Sacred pilgrimage towns, Himalayan treks and serene valleys define the land of gods."
+    },
+    {
+        "id": 28,
+        "name": "West Bengal",
+        "capital": "Kolkata",
+        "image": "../assets/images/states/west-bengal.jpg",
+        "bannerImage": "../assets/images/states/west-bengal1.jpg",
+        "description": "Colonial architecture, the Sundarbans mangroves and rich art define vibrant West Bengal."
+    }
+]

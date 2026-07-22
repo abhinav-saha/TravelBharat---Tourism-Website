@@ -1,0 +1,266 @@
+/* ==========================================================================
+   TravelBharat — LOGIN PAGE STYLESHEET (login.css)
+   Styles the auth page in pages/login.html.
+   Reuses variables, .logo-text, and .btn / .btn--primary from style.css —
+   no colors, fonts, or buttons are redefined here.
+   ========================================================================== */
+
+/* ==========================================================================
+   AUTH PAGE WRAPPER
+   ========================================================================== */
+.auth-page {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: linear-gradient(160deg, var(--color-light-gray) 0%, #EEF2FF 100%);
+}
+
+/* ==========================================================================
+   LOGIN CARD
+   ========================================================================== */
+.auth-card {
+    width: 100%;
+    max-width: 440px;
+    background-color: var(--color-white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    padding: 48px 40px;
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+      animation: fadeIn .5s ease;
+      @keyframes fadeIn {
+    from {
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+}
+
+.auth-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* ==========================================================================
+   LOGIN CARD HEADER
+   ========================================================================== */
+.auth-card__header {
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.auth-card__logo {
+    display: inline-block;
+    margin-bottom: 24px;
+}
+
+.auth-card__heading {
+    font-size: 1.85rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 10px;
+}
+
+.auth-card__subtitle {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    max-width: 320px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   LOGIN FORM
+   ========================================================================== */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-form__group {
+    margin-bottom: 22px;
+}
+
+.auth-form__label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: 8px;
+}
+
+/* ---------- Inputs ---------- */
+.auth-form__input {
+    width: 100%;
+    font-family: var(--font-main);
+    font-size: 0.95rem;
+    color: var(--color-text);
+    background-color: var(--color-light-gray);
+    border: 1.5px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    padding: 14px 16px;
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast);
+}
+
+.auth-form__input::placeholder {
+    color: var(--color-text-muted);
+}
+
+.auth-form__input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    background-color: var(--color-white);
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+/* ---------- Password Field ---------- */
+.auth-form__password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.auth-form__input--password {
+    padding-right: 48px;
+}
+
+.auth-form__toggle-password {
+    position: absolute;
+    right: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color var(--transition-fast);
+}
+
+.auth-form__toggle-password:hover {
+    background-color: var(--color-border);
+}
+
+.auth-form__eye-icon {
+    width: 18px;
+    height: 18px;
+    opacity: 0.6;
+    transition: opacity var(--transition-fast);
+}
+
+.auth-form__toggle-password:hover .auth-form__eye-icon {
+    opacity: 1;
+}
+
+/* ==========================================================================
+   LOGIN BUTTON
+   ========================================================================== */
+.auth-form__submit {
+    width: 100%;
+    margin-top: 8px;
+    padding: 15px 32px;
+    font-size: 1rem;
+}
+
+/* ==========================================================================
+   EXTRA LINKS
+   ========================================================================== */
+.auth-form__extra-links {
+    text-align: center;
+    margin-top: 18px;
+}
+
+.auth-form__link {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-primary);
+    transition: color var(--transition-fast);
+}
+
+.auth-form__link:hover {
+    color: var(--color-primary-dark);
+    text-decoration: underline;
+}
+
+.auth-form__link--strong {
+    font-weight: 700;
+}
+
+.auth-form__signup-text {
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    margin-top: 20px;
+}
+
+/* ==========================================================================
+   LOGIN CARD FOOTER
+   ========================================================================== */
+.auth-card__footer {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.auth-card__back-link {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--color-text-muted);
+    transition: color var(--transition-fast);
+}
+
+.auth-card__back-link:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+
+/* ---------- Tablet ---------- */
+@media (max-width: 768px) {
+    .auth-card {
+        max-width: 400px;
+        padding: 40px 32px;
+    }
+
+    .auth-card__heading {
+        font-size: 1.6rem;
+    }
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 576px) {
+    .auth-page {
+        padding: 16px;
+    }
+
+    .auth-card {
+        max-width: 100%;
+        padding: 32px 22px;
+        border-radius: var(--radius-md);
+    }
+
+    .auth-card__heading {
+        font-size: 1.4rem;
+    }
+
+    .auth-card__subtitle {
+        font-size: 0.85rem;
+    }
+
+    .auth-form__input {
+        padding: 12px 14px;
+    }
+
+    .auth-form__submit {
+        padding: 13px 28px;
+    }
+}

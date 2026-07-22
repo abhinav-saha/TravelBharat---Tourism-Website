@@ -1,0 +1,173 @@
+/* ==========================================================================
+   TravelBharat — DASHBOARD PAGE STYLESHEET (dashboard.css)
+   Styles pages/dashboard.html. Reuses variables and utilities from
+   style.css — no colors, fonts, or buttons are redefined here. Kept
+   consistent with the design language used in home.css and place.css.
+   ========================================================================== */
+
+/* ==========================================================================
+   DASHBOARD HERO
+   ========================================================================== */
+.dashboard-hero {
+    background: linear-gradient(160deg, var(--color-light-gray) 0%, #EEF2FF 100%);
+    padding: 72px 0;
+    text-align: center;
+}
+
+.dashboard-hero__heading {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--color-text);
+    margin-bottom: 12px;
+}
+
+.dashboard-hero__heading #dashboard-username {
+    color: var(--color-primary);
+}
+
+.dashboard-hero__subtitle {
+    font-size: 1.05rem;
+    color: var(--color-text-muted);
+    max-width: 520px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* ==========================================================================
+   QUICK STATS
+   ========================================================================== */
+.dashboard-stats {
+    background-color: var(--color-white);
+}
+
+.dashboard-stats__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.stat-card {
+    background-color: var(--color-white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    padding: 40px 24px;
+    text-align: center;
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.stat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.stat-card__value {
+    font-size: 2.75rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-bottom: 8px;
+}
+
+.stat-card__title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ---------- Gold Accent For Wishlist Stat ---------- */
+#stat-wishlist .stat-card__value {
+    color: var(--color-accent-orange);
+}
+
+/* ==========================================================================
+   QUICK ACTIONS
+   ========================================================================== */
+.dashboard-actions {
+    background-color: var(--color-light-gray);
+}
+
+.dashboard-actions .section-heading {
+    margin-bottom: 40px;
+}
+
+.dashboard-actions__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.dashboard-actions__btn {
+    width: 100%;
+    text-align: center;
+    padding: 16px 24px;
+    font-size: 0.95rem;
+}
+
+.dashboard-actions__btn:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 3px;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+
+/* ---------- Tablet ---------- */
+@media (max-width: 992px) {
+    .dashboard-stats__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dashboard-actions__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ---------- Small Tablet / Large Mobile ---------- */
+@media (max-width: 768px) {
+    .dashboard-hero {
+        padding: 56px 0;
+    }
+
+    .dashboard-hero__heading {
+        font-size: 2rem;
+    }
+
+    .dashboard-hero__subtitle {
+        font-size: 0.95rem;
+    }
+
+    .stat-card {
+        padding: 32px 20px;
+    }
+
+    .stat-card__value {
+        font-size: 2.25rem;
+    }
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 576px) {
+    .dashboard-hero {
+        padding: 44px 0;
+    }
+
+    .dashboard-hero__heading {
+        font-size: 1.6rem;
+    }
+
+    .dashboard-stats__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-actions__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-actions__btn {
+        padding: 14px 20px;
+    }
+}

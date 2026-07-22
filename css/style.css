@@ -1,0 +1,288 @@
+/* ==========================================================================
+   TravelBharat — GLOBAL STYLESHEET (style.css)
+   Reusable, site-wide rules only. Page-specific styling lives in home.css.
+   ========================================================================== */
+
+/* ---------- Google Font Import ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ---------- CSS Reset ---------- */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ---------- Root Variables ---------- */
+:root {
+    /* Colors */
+    --color-primary: #2563EB;
+    --color-primary-dark: #1E3A8A;
+    --color-white: #FFFFFF;
+    --color-light-gray: #F8FAFC;
+    --color-text: #1F2937;
+    --color-text-muted: #6B7280;
+    --color-accent-orange: #F59E0B;
+    --color-accent-green: #10B981;
+    --color-border: #E5E7EB;
+
+    /* Typography */
+    --font-main: 'Poppins', sans-serif;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 3px rgba(31, 41, 55, 0.08);
+    --shadow-md: 0 8px 24px rgba(31, 41, 55, 0.10);
+    --shadow-lg: 0 20px 40px rgba(31, 41, 55, 0.14);
+
+    /* Radius */
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-full: 999px;
+
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-base: 0.3s ease;
+    --transition-slow: 0.5s ease;
+
+    /* Layout */
+    --container-width: 1200px;
+    --section-padding: 100px;
+}
+
+/* ---------- Base Body ---------- */
+body {
+    font-family: var(--font-main);
+    font-weight: 400;
+    color: var(--color-text);
+    background-color: var(--color-white);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+/* ---------- Typography ---------- */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-main);
+    font-weight: 700;
+    color: var(--color-text);
+    line-height: 1.25;
+}
+
+h1 { font-size: 3.25rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.15rem; }
+
+p {
+    font-size: 1rem;
+    color: var(--color-text-muted);
+}
+
+/* ---------- Links ---------- */
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+/* ---------- Images ---------- */
+img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* ---------- Lists ---------- */
+ul {
+    list-style: none;
+}
+
+/* ---------- Buttons (reusable) ---------- */
+button {
+    font-family: var(--font-main);
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 32px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: var(--radius-full);
+    transition: all var(--transition-base);
+    text-align: center;
+    white-space: nowrap;
+}
+
+.btn--primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    box-shadow: var(--shadow-sm);
+}
+
+.btn--primary:hover {
+    background-color: var(--color-primary-dark);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn--secondary {
+    background-color: transparent;
+    color: var(--color-white);
+    border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.btn--secondary:hover {
+    background-color: var(--color-white);
+    color: var(--color-primary-dark);
+    transform: translateY(-3px);
+}
+
+.btn--login {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 10px 26px;
+}
+
+.btn--login:hover {
+    background-color: var(--color-primary-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+.btn--explore {
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 1.5px solid var(--color-primary);
+    padding: 10px 24px;
+    font-size: 0.875rem;
+}
+
+.btn--explore:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn--search {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: var(--radius-full);
+    padding: 14px 30px;
+}
+
+.btn--search:hover {
+    background-color: var(--color-primary-dark);
+}
+
+/* ---------- Layout Utilities ---------- */
+.container {
+    width: 100%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+section {
+    padding: var(--section-padding) 0;
+}
+
+.section-heading {
+    font-size: 2.25rem;
+    text-align: center;
+    margin-bottom: 12px;
+    color: var(--color-text);
+}
+
+.section-subheading {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 48px auto;
+    color: var(--color-text-muted);
+}
+
+/* ---------- Common Grid / Flex Utilities ---------- */
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grid {
+    display: grid;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* ---------- Hover Animation Utility ---------- */
+.hover-lift {
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* ---------- Scrollbar Styling ---------- */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-light-gray);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary-dark);
+}
+
+/* ---------- Selection Color ---------- */
+::selection {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+/* ---------- Focus Accessibility ---------- */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 3px;
+}
+
+/* ---------- Reduced Motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
