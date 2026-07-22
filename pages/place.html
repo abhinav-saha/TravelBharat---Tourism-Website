@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TravelBharat | State Details</title>
+
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Shared Homepage Components (Navbar & Footer) -->
+    <link rel="stylesheet" href="../css/home.css">
+
+    <!-- Place Page Styles -->
+    <link rel="stylesheet" href="../css/place.css">
+</head>
+<body>
+
+    <!-- ==================== NAVIGATION BAR ==================== -->
+    <header class="site-header">
+        <nav class="navbar" id="main-navbar">
+            <div class="navbar__logo">
+                <a href="../index.html" class="logo-text">TravelBharat</a>
+            </div>
+            <ul class="navbar__links" id="navbar-links">
+                <li class="navbar__item"><a href="../index.html" class="navbar__link">Home</a></li>
+                <li class="navbar__item"><a href="state.html" class="navbar__link">Explore</a></li>
+                <li class="navbar__item"><a href="../index.html#about-section" class="navbar__link">About</a></li>
+                <li class="navbar__item"><a href="../index.html#footer" class="navbar__link">Contact</a></li>
+            </ul>
+            <div class="navbar__actions">
+                <a href="login.html" class="btn btn--login" id="login-btn">Login</a>
+            </div>
+            <button class="navbar__toggle" id="navbar-toggle" aria-label="Toggle navigation menu">
+                <span class="navbar__toggle-bar"></span>
+                <span class="navbar__toggle-bar"></span>
+                <span class="navbar__toggle-bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ==================== LOADING MESSAGE ==================== -->
+        <p class="state-page__loading" id="loading-message">Loading state details...</p>
+
+        <!-- ==================== ERROR MESSAGE ==================== -->
+        <p class="state-page__error" id="error-message" hidden>Unable to load state details. Please try again later.</p>
+
+
+        <!-- ==================== BACK TO STATES LINK ==================== -->
+        <nav class="state-page__back-nav" aria-label="Back navigation">
+            <a href="state.html" class="state-page__back-link" id="back-to-states-link">&larr; Back to Explore</a>
+        </nav>
+
+        <!-- ==================== STATE HERO SECTION ==================== -->
+        <section class="state-hero" id="state-hero">
+            <div class="state-hero__background" id="state-hero-bg">
+                <img src="" alt="" class="state-hero__bg-image" id="state-banner">
+            </div>
+            <div class="state-hero__content">
+                <h1 class="state-hero__name" id="state-name"></h1>
+                <p class="state-hero__capital" id="state-capital"></p>
+                <p class="state-hero__description" id="state-description"></p>
+            </div>
+        </section>
+
+        <!-- ==================== TOURIST PLACES SECTION ==================== -->
+        <section class="tourist-places" id="tourist-places-section">
+            <div class="container">
+                <h2 class="section-heading">Top Tourist Places</h2>
+                <div class="tourist-places__grid" id="places-container">
+                    <!-- Tourist place cards are injected here dynamically by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer" id="footer">
+        <div class="site-footer__top">
+            <div class="site-footer__logo">
+                <a href="../index.html" class="logo-text">TravelBharat</a>
+            </div>
+
+            <div class="site-footer__links">
+                <h3 class="site-footer__heading">Quick Links</h3>
+                <ul class="site-footer__list" id="footer-quick-links">
+                    <li><a href="../index.html" class="site-footer__link">Home</a></li>
+                    <li><a href="state.html" class="site-footer__link">Explore</a></li>
+                    <li><a href="../index.html#about-section" class="site-footer__link">About</a></li>
+                    <li><a href="../index.html#footer" class="site-footer__link">Contact</a></li>
+                    <li><a href="#" class="site-footer__link">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="site-footer__social">
+                <h3 class="site-footer__heading">Follow Us</h3>
+                <ul class="site-footer__social-list" id="footer-social-links">
+                    <li><a href="#" class="site-footer__social-link" id="social-facebook" aria-label="Facebook">
+                        <img src="../assets/icons/facebook.svg" alt="Facebook icon">
+                    </a></li>
+                    <li><a href="#" class="site-footer__social-link" id="social-instagram" aria-label="Instagram">
+                        <img src="../assets/icons/instagram.svg" alt="Instagram icon">
+                    </a></li>
+                    <li><a href="#" class="site-footer__social-link" id="social-twitter" aria-label="Twitter">
+                        <img src="../assets/icons/twitter.svg" alt="Twitter icon">
+                    </a></li>
+                    <li><a href="#" class="site-footer__social-link" id="social-youtube" aria-label="YouTube">
+                        <img src="../assets/icons/youtube.svg" alt="YouTube icon">
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="site-footer__bottom">
+            <p class="site-footer__copyright">&copy; 2026 TravelBharat. All rights reserved.</p>
+        </div>
+    </footer>
+    
+<script src="../js/storage.js"></script>
+<script src="../js/place.js"></script>
+</body>
+</html>

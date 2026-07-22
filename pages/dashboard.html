@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBharat | Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+
+    <!-- ==================== NAVIGATION BAR ==================== -->
+    <header class="site-header">
+        <nav class="navbar" id="main-navbar">
+            <div class="navbar__logo">
+                <a href="../index.html" class="logo-text">TravelBharat</a>
+            </div>
+            <ul class="navbar__links" id="navbar-links">
+                <li class="navbar__item"><a href="../index.html" class="navbar__link">Home</a></li>
+                <li class="navbar__item"><a href="state.html" class="navbar__link">Explore</a></li>
+                <li class="navbar__item"><a href="../index.html#about-section" class="navbar__link">About</a></li>
+                <li class="navbar__item"><a href="../index.html#footer" class="navbar__link">Contact</a></li>
+            </ul>
+            <div class="navbar__actions">
+                <a href="login.html" class="btn btn--login" id="login-btn">Login</a>
+            </div>
+            <button class="navbar__toggle" id="navbar-toggle" aria-label="Toggle navigation menu">
+                <span class="navbar__toggle-bar"></span>
+                <span class="navbar__toggle-bar"></span>
+                <span class="navbar__toggle-bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ==================== DASHBOARD HERO ==================== -->
+        <section class="dashboard-hero" id="dashboard-hero">
+            <div class="container">
+                <h1 class="dashboard-hero__heading">Welcome, <span id="dashboard-username"></span></h1>
+                <p class="dashboard-hero__subtitle">Here's a quick look at your TravelBharat journey so far.</p>
+            </div>
+        </section>
+
+        <!-- ==================== QUICK STATS ==================== -->
+        <section class="dashboard-stats" id="dashboard-stats">
+            <div class="container">
+                <div class="dashboard-stats__grid" id="dashboard-stats-grid">
+
+                    <article class="stat-card" id="stat-wishlist">
+                        <h3 class="stat-card__title">Wishlist</h3>
+                        <p class="stat-card__value" id="wishlist-count"></p>
+                    </article>
+
+                    <article class="stat-card" id="stat-states">
+                        <h3 class="stat-card__title">States</h3>
+                        <p class="stat-card__value" id="states-count">28</p>
+                    </article>
+
+                    <article class="stat-card" id="stat-places">
+                        <h3 class="stat-card__title">Tourist Places</h3>
+                        <p class="stat-card__value" id="places-count">112</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== QUICK ACTIONS ==================== -->
+        <section class="dashboard-actions" id="dashboard-actions">
+            <div class="container">
+                <h2 class="section-heading">Quick Actions</h2>
+                <div class="dashboard-actions__grid" id="dashboard-actions-grid">
+                    <a href="state.html" class="btn btn--primary dashboard-actions__btn" id="explore-btn">Explore States</a>
+                    <a href="#" class="btn btn--secondary dashboard-actions__btn" id="wishlist-btn">My Wishlist</a>
+                    <button type="button" class="btn btn--explore dashboard-actions__btn" id="logout-btn">Logout</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer" id="footer">
+        <div class="site-footer__top">
+            <div class="site-footer__logo">
+                <a href="../index.html" class="logo-text">TravelBharat</a>
+            </div>
+
+            <div class="site-footer__links">
+                <h3 class="site-footer__heading">Quick Links</h3>
+                <ul class="site-footer__list" id="footer-quick-links">
+                    <li><a href="../index.html" class="site-footer__link">Home</a></li>
+                    <li><a href="state.html" class="site-footer__link">Explore</a></li>
+                    <li><a href="../index.html#about-section" class="site-footer__link">About</a></li>
+                    <li><a href="../index.html#footer" class="site-footer__link">Contact</a></li>
+                    <li><a href="#" class="site-footer__link">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="site-footer__social">
+                <h3 class="site-footer__heading">Follow Us</h3>
+                <ul class="site-footer__social-list" id="footer-social-links">
+                    <li><a href="#" class="site-footer__social-link" id="social-facebook" aria-label="Facebook">
+                        <img src="../assets/icons/facebook.svg" alt="Facebook icon">
+                    </a></li>
+                    <li><a href="#" class="site-footer__social-link" id="social-instagram" aria-label="Instagram">
+                        <img src="../assets/icons/instagram.svg" alt="Instagram icon">
+                    </a></li>
+                    <li><a href="#" class="site-footer__social-link" id="social-twitter" aria-label="Twitter">
+                        <img src="../assets/icons/twitter.svg" alt="Twitter icon">
+                    </a></li>
+                    <li><a href="#" class="site-footer__social-link" id="social-youtube" aria-label="YouTube">
+                        <img src="../assets/icons/youtube.svg" alt="YouTube icon">
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="site-footer__bottom">
+            <p class="site-footer__copyright">&copy; 2026 TravelBharat. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/storage.js"></script>
+    <script src="../js/dashboard.js"></script>
+</body>
+</html>
